@@ -29,7 +29,7 @@ with open('msg.txt', 'r',encoding='utf8') as file:
     data = file.read().replace('\n', '%0A')
 
 for i, j in zip(numbers, names):
-    web_page = driver.get("https://web.whatsapp.com/send?phone=+966{}&text={}&app_absent=1".format(str(i), data))
+    web_page = driver.get("https://web.whatsapp.com/send?phone=+{}&text={}&app_absent=1".format(str(i), data))
     time.sleep(20)
     button = driver.find_element_by_xpath('//*[@id="main"]/footer/div[1]/div[2]/div/div[2]/button')
     button.click()
