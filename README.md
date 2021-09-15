@@ -22,6 +22,7 @@ install the [chromedriver](https://chromedriver.chromium.org/downloads) and put 
 put the numbers on the csv file (numbers.csv) with this format (966555555) *without plus*
 
 then put your msg in the msg.txt file
+AND you can put name in the msg, by type {NAME} instead of the name
 
 then run this command
 ```python
